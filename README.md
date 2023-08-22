@@ -13,3 +13,7 @@ WorkFence is a tool for shared workspaces/factories, places where co-workers are
 <img src="https://github.com/omkarpatil18/workfence/assets/16060082/bd843ca3-64a2-428f-b629-4f004df68098)https://github.com/omkarpatil18/workfence/assets/16060082/bd843ca3-64a2-428f-b629-4f004df68098" alt="drawing" width="200"/>
 
 <img src="https://github.com/omkarpatil18/workfence/assets/16060082/b9de34e4-16e4-4e24-8a25-9aeebfa9a5d3" alt="drawing" width="200"/>
+
+
+
+A blog post on the same can be found here: https://medium.com/@indian.op45/covid-contact-tracing-explained-corona-kavach-e50eaa0ec270
