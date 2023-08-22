@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@drawable/interaction_card_bg"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:background="@drawable/interaction_card_bg"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/name1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="clip_vertical"
+                android:layout_weight="2"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Mathew"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center|center_vertical"
+                android:layout_weight="0.6"
+                android:paddingStart="4dp"
+                android:paddingEnd="4dp"
+                app:srcCompat="@drawable/ic_arrows_alt_h_solid" />
+
+            <TextView
+                android:id="@+id/name2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="clip_horizontal"
+                android:layout_weight="2"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center_vertical"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Jane Doe John - Moto"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/time"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="Time"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/time_intreac"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:text="01/01/2020 - 5min"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textView11"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:text="Distance"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/dist"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="8dp"
+                android:paddingTop="4dp"
+                android:text="1.2 meter"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_interac"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

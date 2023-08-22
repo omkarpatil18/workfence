@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">WorkFence - Mask and Distancing for Organizations</string>
+    <string name="login_str">Welcome to WorkFence "\n"  Login to Continue</string>
+    <string name="att_msg">Attendance Message</string>
+    <string name="open">open_drawer</string>
+    <string name="close">close_drawer</string>
+
+    <string name="message">This will let you know if you are flouting social distancing norms.</string>
+    <string name="is_calib">Your device is calibrated</string>
+    <string name="is_not_calib">Your device is not calibrated</string>
+
+
+    <string name="help_company_interaction">
+        This page shows all employees who interacted today\nOnly interactions with distance less than 1.5m is recorded here\n\n1. Users who interacted\n2. Time at which interaction took place and duration of the interaction\n
+    </string>
+
+    <string name="help_personal_interaction">
+        This page shows the employees with whom you are currently interacting\n\n1. Name of user with whom you interacted\n2. Time at which interaction took place\n3. Color of card represents distance of ongoing interaction :\n
+            Green - greater than 1.5m\n
+            Red - less than 1.5m\n
+    </string>
+
+    <string name="help_attendance">
+        This page shows today\'s attendance information of employees.\n\n1. Name of employee\n2. Check in and check out time\n
+    </string>
+
+    <string name="help_emp_metrics">
+        This page shows the list of users enrolled in the company\n\n1. Rating of user based on interaction time in current week\n2. Total work time in week\n3. Click this to see detailed information about employee\n
+    </string>
+
+    <string name="link1">
+
+    </string>
+
+    <string name="about_1">
+    Our lifestyles, workstyles, and activities have been challenged.\n\n<b>WorkFence</b> is a suite of secure,
+        smartphone based software tools which will help in facing these challenges.\n\n<b>WorkFence</b> is a tool for
+        shared workspaces/ factories, places where co-workers are required to be together for work.
+        It will monitor Social Distancing at workplaces, during work hours. It will capture every event of not distancing,
+        so as to train workforce/ teams to work-collaborate with distancing.
+Workfence takes no personal information, shares no data (except with designated administrators in organisation).
+        Workfence monitors only at designated place of work, at designated work times.The system is developed by
+        using BLE (BlueTooth Low energy protocol), and advanced, robust algorithms.
+The WorkFence mobile app is developed by technocrats with two decades of experience,
+        along with a team of bright students from <b>IIT Madras</b>, developing this proprietary
+        algorithm with complex mathematical modeling\n</string>
+
+    <string name="about2">
+        <b><u>3 Things to Stay Safe</u></b>
+    </string>
+
+    <string name="privacy_policy">
+        We do not collect any location data, except for the purposes of ensuring that the person
+        is inside company premises while marking his/her attendance (Accuracy: +/- 500 meters radius).
+        We do not ‘track’ people.\n\nThe identification of close contact between two
+        people is done through Bluetooth. All these services are only activated when the user
+        swipes right- starts office hours, and ends when the user swipes left.\n\nAll data is stored on
+        secure cloud servers, and all employee or employer privacy related norms are respected and followed
+        strictly. All data is stored or deleted at the employers option.\n\nRead more out our data policy,
+        and how WorkFence operates at www.workfence.in\n\nDisclaimer: WorkFence is an employee
+        training and monitoring tool to ensure the implementation of distancing at workplaces.
+        It is not a medical or diagnostic tool.
+    </string>
+
+    <string name="resToastText">App crashed!! Send error report to help us improve</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="url_root">http://api.workfence.in</string>
+
+    <string name="start_office">Start Work Hours</string>
+    <string name="end_office">End Work Hours</string>
+    <string name="in_office">Office</string>
+    <string name="wfh">WFH</string>
+    <string name="timer">Timer</string>
+    <string name="mask_msg">"You are not wearing a mask. Please wear a mask to continue checking in."</string>
+
+</resources>

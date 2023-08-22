@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group1"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/interactions"
+            android:icon="@drawable/ic_people_arrows_solid"
+            android:title="Employee Distancing" />
+        <item
+            android:id="@+id/ble_contacts"
+            android:icon="@drawable/ic_solid"
+            android:title="Personal Distancing" />
+        <item
+            android:id="@+id/attendance"
+            android:icon="@drawable/ic_calendar_check_solid"
+            android:title="Daily Attendance" />
+        <item
+            android:id="@+id/emp_metrics"
+            android:icon="@drawable/ic_chart_line_solid"
+            android:title="Employee metrics" />
+        <item
+            android:id="@+id/attd_history"
+            android:icon="@drawable/ic_calendar_check_solid"
+            android:title="Attendance History" />
+        <item
+            android:id="@+id/interaction_history"
+            android:icon="@drawable/ic_chart_line_solid"
+            android:title="Interaction History" />
+    </group>
+    <group android:id="@+id/group2">
+        <item
+            android:icon="@drawable/ic_baseline_help_outline_24"
+            android:id="@+id/help"
+            android:title="Help" />
+        <item
+            android:id="@+id/links"
+            android:icon="@drawable/ic_6corona_icon"
+            android:title="Precautions" />
+
+        <item
+            android:id="@+id/about"
+            android:icon="@drawable/ic_icons8_about"
+            android:title="About Us" />
+
+        <item
+            android:id="@+id/privacy"
+            android:icon="@drawable/ic_baseline_policy_24"
+            android:title="Privacy Policy" />
+    </group>
+</menu>

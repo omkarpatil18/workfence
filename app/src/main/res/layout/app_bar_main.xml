@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="?attr/colorPrimary"
+                app:popupTheme="@style/AppTheme.PopupOverlay">
+
+            </androidx.appcompat.widget.Toolbar>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/appbar">
+
+            <FrameLayout
+                android:id="@+id/content_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="16dp"
+            android:alpha="0.8"
+            android:backgroundTint="@color/gray"
+            android:contentDescription="@string/start_office"
+            android:text="@string/start_office"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            app:icon="@drawable/ic_baseline_business_center_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:visibility="visible" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_in_office"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:alpha="0.8"
+            android:backgroundTint="@color/gray"
+            android:contentDescription="@string/in_office"
+            android:text="@string/in_office"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            app:icon="@drawable/ic_baseline_domain_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_wfh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:alpha="0.8"
+            android:backgroundTint="@color/gray"
+            android:contentDescription="@string/wfh"
+            android:text="@string/wfh"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            android:visibility="visible"
+            app:icon="@drawable/ic_baseline_home_work_24"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/fab_timer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_margin="16dp"
+            android:alpha="0.8"
+            android:backgroundTint="@color/gray"
+            android:contentDescription="@string/timer"
+            android:text="0 hr 0 min"
+            android:textAllCaps="false"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            app:icon="@drawable/ic_baseline_timer_24"
+            app:layout_constraintBottom_toTopOf="@+id/fab_check"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:visibility="visible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:alpha="0.8"
+            android:backgroundTint="@color/gray"
+            android:contentDescription="@string/close"
+            android:theme="@style/Theme.MaterialComponents.NoActionBar"
+            app:fabSize="mini"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/ic_baseline_close_16" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

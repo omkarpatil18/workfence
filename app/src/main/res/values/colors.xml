@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2F80ED</color>
+    <color name="colorSecondary">#0C5BC6</color>
+    <color name="colorAccent">#FF0000</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#00FF00</color>
+    <color name="yellow">#FFFF00</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <color name="gradient_sec">#56CCF2</color>
+    <color name="gray">#E0E0E0</color>
+
+
+    <color name="notifAlert">#FF0000</color>
+    <color name="notifSafe">#00FF00</color>
+    <color name="notifWarning">#FFFF00</color>
+</resources>

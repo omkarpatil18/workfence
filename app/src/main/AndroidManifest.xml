@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.workfence">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher_wfapp"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:roundIcon="@mipmap/ic_launcher_wfapp_round"
+        android:supportsRtl="true"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".activities.MaskChangeActivity"
+            android:label="Mask Detection"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.ClassifierActivity"
+            android:label="Mask Detection"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.PrivacyPolicy"
+            android:label="Privacy Policy"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.LinksActivity"
+            android:label="Precautions"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.AboutActivity"
+            android:label="About Us"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.TokenActivity"
+            android:label="Enter Token"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Notheme" />
+        <activity
+            android:name=".activities.HelpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Notheme" />
+        <activity
+            android:name=".activities.OtpActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Notheme" />
+        <activity
+            android:name=".activities.EmployeeInteractionDetails"
+            android:parentActivityName=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Notheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.Notheme" />
+
+        <service
+            android:name=".others.MyService"
+            android:enabled="true"
+            android:exported="true"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="i" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".others.BatteryLevelBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BATTERY_LOW" />
+                <action android:name="android.intent.action.BATTERY_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name=".others.BluetoothBroadcastReceiver"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.bluetooth.adapter.action.STATE_CHANGED" />
+                <action android:name="android.bluetooth.adapter.action.CONNECTION_STATE_CHANGED" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".others.ScreenTimeBroadcastReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.SCREEN_OFF" />
+                <action android:name="android.intent.action.SCREEN_ON" />
+            </intent-filter>
+        </receiver>
+
+        <provider
+            android:name=".database.DataProvider"
+            android:authorities="com.workfence"
+            android:exported="false" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

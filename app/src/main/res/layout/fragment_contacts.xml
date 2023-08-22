@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.workfence.fragments.ContactsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_tv"
+            android:layout_margin="4dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:layout_toStartOf="@+id/border"
+                android:fontFamily="@font/montserrat"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="@string/message"
+                android:textSize="13sp" />
+
+            <View
+                android:id="@+id/border"
+                android:layout_width="2dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="8dp"
+                android:layout_toStartOf="@+id/calibration"
+                android:background="@color/colorPrimary" />
+
+            <LinearLayout
+                android:id="@+id/calibration"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_margin="4dp"
+                android:orientation="vertical"
+                android:padding="4dp">
+
+                <ImageView
+                    android:id="@+id/img_is_calib"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_horizontal"
+                    android:src="@mipmap/ic_launcher_wfapp" />
+
+                <TextView
+                    android:id="@+id/is_calib"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:gravity="center"
+                    android:text="Your device is not calibrated"
+                    android:textSize="8sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/app_disp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</FrameLayout>
